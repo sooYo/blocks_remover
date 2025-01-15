@@ -21,8 +21,11 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+     prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+     sort_child_properties_last: true # Always add child property at the last index
+     sort_constructors_first: true # The constructor is always the first thing I want to see
+     always_declare_return_types: true # Returning dynamic implicitly is not allowed by a pro Darter
+     dangling_library_doc_comments: false # For my own style
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
