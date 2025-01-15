@@ -14,7 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: GameWidget(game: BlockRemoverGame())),
+      home: Scaffold(
+        body: GameWidget(
+          game: BlockRemoverGame(),
+          backgroundBuilder: (context) => Container(color: Colors.white),
+        ),
+      ),
     );
   }
 }
